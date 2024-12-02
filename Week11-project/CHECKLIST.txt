@@ -1,0 +1,12 @@
+Create a website that has the following features.
+Add a background to your site that takes up the entire screen (5 points) DONE
+Add a div that allows the content of the div to be scrolled (5 points) DONE
+Create another div and set a linear gradient as a background (5 points) DONE
+Create another div and place a border around the div and round the corners (5 points) DONE
+Create another div and rotate the div 45 degrees (5 points) DONE
+Create another div and scale the div 2x larger (5 points) DONE
+Create another div and skew the div (5 points) DONE
+Create another div and make it spin when you place the mouse over it (5 points) DONE
+Create another div and make it spin using CSS animation (5 points) DONE
+Make sure your site is mobile friendly and Responsive. Displays well on both Mobile and desktop (5 points)
+Professionalism score. ( 5 points)

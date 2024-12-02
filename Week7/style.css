@@ -1,0 +1,169 @@
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+nav {
+    z-index: 10;
+}
+
+.nav-bar {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 20px;
+}
+
+.nav-item a{
+    text-decoration: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: rgb(107 114 128);
+    padding: 15px 20px;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: border-bottom ease 0.3s;
+    border-bottom: 1px solid transparent;
+    margin: 0px 5px;
+}
+
+.nav-item:hover {
+    border-bottom: 1px solid rgb(107 114 128);
+} 
+
+.wrapper {
+    width: 100%;
+}
+
+.article-ident {
+    width: 100%;
+}
+
+.article-ident h2 {
+    padding: 30px 30px 20px;
+    font-size: 50px;
+    color: rgb(107 114 128);
+    line-height: 44px;
+}
+
+.article-ident p {
+    padding: 0px 30px 20px;
+    font-size: 16px;
+    color: rgb(107 114 128);
+    line-height: 24px;
+}
+
+.columns {
+    display: flex;
+}
+
+#article-ident-about h2 {
+    font-size: 35px;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.suomi-wrapper {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#finnish-flag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.hyva-wrapper {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finnish-guy-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 500px;
+    cursor: pointer;
+    transition: width 0.5s ease, transform 0.5s ease;
+    transform: rotate(0deg);
+}
+
+#finn {
+    border-radius: 50px; 
+}
+
+.finnish-guy-img:active {
+    width: 800px;
+    transform: rotate(360deg);
+} 
+
+@media print {
+    header {
+        display: none;
+    }
+
+    .article-ident h2,
+    .article-ident p {
+        color: green;
+    }
+}
+
+/*This is for screens less than 480px wide*/
+@media only screen and (max-width: 480px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-bar {
+        display: flex;
+    }
+
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 48px;
+        min-width: 48px;
+    }
+
+    .columns {
+        display: block;
+    }
+}
+
+/*This is for tablts (480px - 1200px)*/
+@media only screen and (min-width: 480px) and (max-width: 1200px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 48px;
+        min-width: 48px;
+    }
+}
+
+
+/*Not too sure if i need a seperate one for desktops considering it is already defined lol*/

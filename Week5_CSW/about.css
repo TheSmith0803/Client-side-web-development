@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bio {
+    font-size: 45px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-top: 350px;
+    z-index: 15;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 375px;
+    text-align: center;
+}
+
+p {
+    margin: 20px 0px;
+    border: 5px outset aliceblue;
+    padding: 20px;
+    border-radius:20px;
+}
+
+#tag {
+    height: 20vh;
+    text-align: center;
+}
+
+.table {
+    color: aliceblue;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 50%;
+}
+.table-top td
+.table-top th {
+    border: none;
+    padding: 5px;
+}
+
+.table-other td, 
+.table-other th {
+    border: 1px solid aliceblue;
+    padding: 5px;
+}
+
+ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+.joey {
+    display: flex;
+    justify-content: center;
+}

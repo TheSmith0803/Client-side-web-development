@@ -1,0 +1,122 @@
+
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(170, 172, 201);
+}
+
+.nav-bar {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+    text-align: center;
+    list-style: none;
+   
+}
+
+.list-item a:hover {
+    cursor: pointer;
+    color: black;
+    background-color: aliceblue;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.bg-body {
+    background: linear-gradient(to left, #3a3 , #ff99cc);
+}
+
+.content {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 0px 30px;
+}
+
+main {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 0px 30px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 1000px;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.rounded-corners {
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.border-image {
+    border: 50px solid transparent;
+    padding: 15px;
+    border-image: url(images/border-image.png) 20% round;
+}
+
+.transform {
+    border: 3px solid blueviolet;
+    background-color: tomato;
+    transform: rotate(20deg) scale(1.5) translate(50px) skewY(50deg)
+}
+
+@keyframes back-and-forth {
+    0% {background-color: black; color: white; left:-200px;}
+    25% {background-color: #3a3; border-color: black; color: black; left: 0px;}
+    50% {background-color: red; border-color: chartreuse; color: black; left: 200px;}
+    75% {background-color: aqua; left: 0px;}
+    100% {background-color: black; color: white; left: -200px;}
+}
+
+.animate {
+    font-size: 20px;
+    border: 2px solid turquoise;
+    background-color: thistle;
+    padding: 5px;
+    position: relative;
+    animation-name: back-and-forth;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pictures.css">
+    <link rel="stylesheet" href="merch.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+    <div id="Page-top">
+        <h1 id="nav-title"><a href="index.html" class="logo-link">ETCHER</a></h1>
+            <ul id="nav_bar">
+                <a href="index.html"><li>Home</li></a>
+                <a href="contents.html" class="contents"><li class="contents">Contents</li></a>
+                <a href="about.html"><li>About</li></a>
+            </ul>
+    </div>
+    <div id="content">
+        <div class="store-buttons">
+            <div class="lesson-div"><p class="lesson-text">LESSONS</p>
+                <div>
+                    <p class="lesson1">30 min session<br><price>$30 USD</price></p>
+                    <p class="lesson1">60 min session<br><price>$45 USD</price></p>
+                    <p class="lesson1">120 min session<br><price>$70 USD</price></p>
+                </div>        
+        </div>
+            <div class="samplePacks-div"><p class="SP-text">SAMPLE PACKS</p>
+                <div>
+                    <p class="sample1">Dumb Drums<br><price>$15 USD</price></p>
+                    <p class="sample1">Beneavolant Basses<br><price>$15 USD</price></p>
+                    <p class="sample1">Freaky FX<br><price>$15 USD</price></p>
+                    <p class="sample1">BUNDLE<br><price>$35 USD</price></p>
+                </div>
+            </div>
+            <div class="tickets-div"><p class="tix-shows-text">TICKETS/SHOWS</p>
+                <div>
+                    <p class="show1">NO SHOWS YET :(</p>
+                </div>
+            </div>
+            <div class="merch-container">
+                <div class="merch">
+                    MERCH
+                </div>
+                <div class="shirts">
+                    <div class="shirt-item">
+                        <img src="images/black-t-shirt.png" alt="black etcher shirt">
+                        <div class="merch-price">Etcher T-Shirt<br>$20</div>
+                        <button class="merch-button">BUY</button>
+                    </div>
+                    <div class="shirt-item">
+                        <img src="images/long-sleeve.png" alt="long sleeve logo shirt">
+                        <div class="merch-price">Etcher Long Sleeve<br>$25</div>
+                        <button class="merch-button">BUY</button>
+                    </div>
+                    <div class="shirt-item">
+                        <img src="images/Text-logo-shirt.png" alt="shirt with etcher text">
+                        <div class="merch-price">Etcher Text Shirt<br>$30</div>
+                        <button class="merch-button">BUY</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="etcher-pic">
+            <img src="images/etcher-pic.png" alt="Etcher's logo" class="etcher-pic">
+        </div>
+    </div>
+    <script>
+        let elements = document.querySelectorAll(".lesson-text, .SP-text, .tix-shows-text")
+        let merch = document.querySelectorAll(".merch")
+        
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].addEventListener("click", bassHit);
+        }
+        for (let i=0; i < merch.length; i++) {
+            merch[i].addEventListener("click", bassStab);
+        }
+
+        function bassHit() {
+            let audio = new Audio("audio\\Mr._Bill's_Tunes_Experimental Drums_one_shot_Bro-en_Kick_05.wav");
+            audio.play();
+        }
+
+        function bassStab() {
+            let stab = new Audio("audio\\Cymatics - Mothership Bass One Shot 9 - F.wav");
+            stab.play();
+        }
+
+    </script>   
+    <div id="tag-content">
+        &copy; Etcher Music LLC
+    </div>
+</body>
+</html>
