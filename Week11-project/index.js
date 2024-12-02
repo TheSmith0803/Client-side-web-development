@@ -43,3 +43,14 @@ function resetInterval(){
     clearInterval(intervalId);
     intervalId = setInterval(nextSlide, 5000);
 }
+
+const spinner = document.getElementsByClassName(".spinner")
+
+function spin() {
+    spinner.addEventListener('mouseover', function(){
+        spinner.classList.add('spin');
+    });
+    spinner.addEventListener('mouseleave', function(){
+        spinner.classList.remove('spin');
+    });
+}
