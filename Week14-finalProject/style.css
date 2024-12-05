@@ -5,6 +5,7 @@
 }
 
 /*ALL NON ID or CLASS defenitions*/
+/*Basic stylings*/
 
 * {
     margin: 0;
@@ -84,9 +85,8 @@ header {
     text-shadow: 0px 4px 4px #000;
     color: #fff;
     font-size: 65px;
-    transform: translateY(-200px);
     opacity: 0.8;
-    transform: translateZ(5px) sclae(0.5);
+    transform: translateZ(5px) translateY(-100px) scale(0.5);
 
 }
 
@@ -146,6 +146,7 @@ header h1 {
 }
 
 section {
+    position: relative;
     display: flex;
     justify-content: center;
     font-size: 2rem;
