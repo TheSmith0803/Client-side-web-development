@@ -199,8 +199,9 @@ p {
     position: relative;
     margin: 20px;
     margin-top: 250px;
-    margin-bottom: 200px;
+    margin-bottom: 0;
     padding: 200px;
+    padding-bottom: 150px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -236,14 +237,16 @@ p {
 
 .explination1,
 .explination2 {
+    display: flex;
     color: #bbb;
     text-align: left;
     font-size: 25px;
-    width: 500px;
+    max-width: 500px;
 }
 
 #dev-form-container {
     display:flex;
+    justify-content: center;
     flex-direction: column;
     width: 400px;
     margin-top: 80px;
@@ -300,5 +303,21 @@ p {
     top: 90%;
     align-self: center;
 }
+
+#dev-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.dev-img {
+    position: relative;
+    width: 200px;
+    align-self: center;
+}
+
+
 
 /*ABOUT PAGE stylings*/
