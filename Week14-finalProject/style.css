@@ -161,6 +161,11 @@ section {
     height: 100%;
 }
 
+#home-section {
+    border-top: 1px solid #999;
+    box-shadow: 2px -50px 500px 0px #333;
+}
+
 p {
     padding: 1rem;
     text-align: center;
