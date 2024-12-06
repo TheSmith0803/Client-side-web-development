@@ -192,6 +192,7 @@ p {
 
 #dev-header a {
     text-decoration: none;
+    margin-bottom: 35px;
 }
 
 #dev-section {
@@ -211,16 +212,16 @@ p {
     font-family: monospace;
     color: #bbb;
     text-shadow: 3px 3px 0px #000;
-    background-image: linear-gradient(to right, #333, #555);
+    background-color: #333;
     padding: 15px;
     border-radius: 20px;
-    margin-bottom: 35px;
     cursor:pointer;
     transition: 0.3s ease-in-out;
 }
 
 .github-link:hover {
     color: #fff;
+    background-color: #115;
     transform: translateY(-4px);
 }
 
