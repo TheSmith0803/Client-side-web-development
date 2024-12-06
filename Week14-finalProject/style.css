@@ -60,6 +60,12 @@ header {
     z-index: -1;
 }
 
+.home-bio {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .background,
 .foreground {
     position: absolute;
@@ -151,6 +157,7 @@ section {
     font-size: 2rem;
     padding: 2rem;
     background-color: black;
+    height: 100%;
 }
 
 p {
@@ -169,27 +176,52 @@ p {
 /*DEV PAGE stylings*/
 
 #dev-header {
-    position: relative;
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: auto;
+    margin-top: 200px;
+
+}
+
+#dev-header a {
+    text-decoration: none;
+}
+
+#dev-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .message {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 500;
     font-family: monospace;
-    color: #999;
+    color: #bbb;
     text-shadow: 3px 3px 0px #000;
     background-image: linear-gradient(to right, #333, #555);
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 20px;
     margin-bottom: 20px;
+    cursor:pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.message:hover {
+    color: #fff;
+    transform: translateY(-4px);
 }
 
 .code-wall {
     width: 500px;
     border-radius: 20px;
 
+}
+
+.explination1 {
+    font-size: 30px;
+    width: 500px;
 }
 
 /*ABOUT PAGE stylings*/
