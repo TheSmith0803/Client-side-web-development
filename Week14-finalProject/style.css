@@ -198,12 +198,15 @@ p {
 #dev-section {
     position: relative;
     margin: 20px;
-    margin-top: 400px;
+    margin-top: 250px;
+    margin-bottom: 200px;
+    padding: 200px;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    overflow: hidden;
 }
 
 .github-link {
@@ -290,6 +293,10 @@ p {
     color: #fff;
     transform: translateY(-4px);
     border: 1px solid #555;
+}
+
+.submit-message {
+    position:absolute;
 }
 
 /*ABOUT PAGE stylings*/
