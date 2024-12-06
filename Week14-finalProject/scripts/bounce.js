@@ -10,3 +10,4 @@ $(document).ready(function() {
     let logo6 = $('.logo6');
 
 });
+

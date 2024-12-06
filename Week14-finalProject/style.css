@@ -173,11 +173,11 @@ p {
 /*DEV PAGE stylings*/
 
 #dev-header {
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: auto;
-    margin-top: 200px;
-
+    height: 0;
+    margin-top: 400px;
 }
 
 #dev-header a {
@@ -185,13 +185,17 @@ p {
 }
 
 #dev-section {
+    position: relative;
+    margin: 20px;
+    margin-top: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.message {
+.github-link {
     font-size: 40px;
     font-weight: 500;
     font-family: monospace;
@@ -200,12 +204,12 @@ p {
     background-image: linear-gradient(to right, #333, #555);
     padding: 15px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     cursor:pointer;
     transition: 0.3s ease-in-out;
 }
 
-.message:hover {
+.github-link:hover {
     color: #fff;
     transform: translateY(-4px);
 }
@@ -216,9 +220,23 @@ p {
 
 }
 
-.explination1 {
-    font-size: 30px;
+.explination1,
+.explination2 {
+    color: #bbb;
+    text-align: left;
+    font-size: 25px;
     width: 500px;
 }
 
+#dev-form-container {
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.dev-input {
+    margin: 5px;
+    padding: 3px;
+    box-shadow: 0px 0px 5px 0px #fff;
+}
 /*ABOUT PAGE stylings*/
