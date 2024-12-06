@@ -200,7 +200,7 @@ p {
     margin: 20px;
     margin-top: 250px;
     margin-bottom: 0;
-    padding: 200px;
+    padding-top: 190px;
     padding-bottom: 150px;
     height: 300px;
     display: flex;
@@ -208,6 +208,7 @@ p {
     justify-content: center;
     align-items: center; 
     overflow: hidden;
+    min-width: 500px;
 }
 
 .github-link {
@@ -249,7 +250,7 @@ p {
     justify-content: center;
     flex-direction: column;
     width: 400px;
-    margin-top: 80px;
+    margin-top: 50px;
     padding-bottom: 50px;
 }
 

@@ -46,5 +46,8 @@ $(document).ready(function() {
             $('.submit-message').html("You can only submit once!");
         }
 
+        if (clicked) {
+            $
+        }
     });
 });
