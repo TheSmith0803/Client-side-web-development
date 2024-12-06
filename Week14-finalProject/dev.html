@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <title>DJ Etcher - Development</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
     crossorigin="anonymous"></script>
+    <script src="scripts/dev_input.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -34,10 +36,10 @@
                 Fill out the form below to inquire about my services!
             </p>
             <form id="dev-form-container">
-                <label for="email">Email:</label>
-                <input type="email" id="email-input" class="dev-input" placeholder="youremail123@example.com" required>
-                <input type="first name" id="name-input" class="dev-input" placeholder="Name" required>
-                <input type="text" id="message-input" class="dev-input" placeholder="Say hello! (optional)">
+                <div id="prompt">Enter your information!</div>
+                <input type="email" id="email-input" class="dev-input" placeholder="Email" required>
+                <input type="fname" id="name-input" class="dev-input" placeholder="Name" required>
+                <textarea type="text" id="message-input" class="dev-input" placeholder="Say hello! (optional)" rows="3"></textarea>
                 <button type="submit" id="dev-form-button">Submit</button>
             </form>
         </section>
