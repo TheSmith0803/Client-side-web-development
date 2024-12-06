@@ -47,7 +47,11 @@ $(document).ready(function() {
         }
 
         if (clicked) {
-            $
+            $('.submit-message').animate({
+                left: "5px",
+                right: "10px",
+                left: "0px"
+            }, 500);
         }
     });
 });
