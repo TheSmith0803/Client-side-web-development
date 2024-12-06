@@ -164,6 +164,7 @@ section {
 #home-section {
     border-top: 1px solid #999;
     box-shadow: 2px -50px 500px 0px #333;
+    padding-bottom: 5px;
 }
 
 p {
@@ -289,4 +290,5 @@ p {
     transform: translateY(-4px);
     border: 1px solid #555;
 }
+
 /*ABOUT PAGE stylings*/
