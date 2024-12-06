@@ -43,7 +43,7 @@ $(document).ready(function() {
 
             clicked = true;
         } else {
-            //do nothing
+            $('.submit-message').html("You can only submit once!")
         }
 
     });
