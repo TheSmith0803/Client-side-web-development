@@ -46,11 +46,11 @@ $(document).ready(function() {
             $('.submit-message').html("You can only submit once!");
         }
 
-        if (clicked) {
-            $('.submit-message').animate({
-                left: "5px",
-                right: "10px",
-                left: "0px"
+        let message = $('.submit-message');
+
+        if (clicked && message.text() === "You can only submit once!") {
+            message.animate({
+                letterSpacing: "20",
             }, 500);
         }
     });

@@ -200,7 +200,7 @@ p {
     margin: 20px;
     margin-top: 250px;
     margin-bottom: 0;
-    padding-top: 190px;
+    padding-top: 210px;
     padding-bottom: 150px;
     height: 300px;
     display: flex;
@@ -251,7 +251,7 @@ p {
     flex-direction: column;
     width: 400px;
     margin-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
 
 .dev-input {
@@ -303,6 +303,8 @@ p {
     position:absolute;
     top: 90%;
     align-self: center;
+    text-wrap: nowrap;
+    overflow: -moz-hidden-unscrollable;
 }
 
 #dev-footer {
