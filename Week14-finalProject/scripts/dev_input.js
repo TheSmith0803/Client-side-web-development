@@ -13,6 +13,42 @@ $(document).ready(function() {
         
         //conditional to make sure submission can only happen once
         //per page load
+        
+        let message = $('.submit-message');
+
+        if (message.text() === "You can only submit once!") {
+            setMaroon();
+            message.animate({
+                marginLeft: "10px"
+            }, 50).animate({
+                marginLeft: "-10px"
+            }, 50).animate({
+                marginLeft: "20px"
+            }, 50).animate({
+                marginLeft: "-30px"
+            }, 50).animate({
+                marginLeft: "30px"
+            }, 50).animate({
+                marginLeft: "-20px"
+            }, 50).animate({
+                marginLeft: "10px"
+            }, 50).animate({
+                marginLeft: "-10px"
+            }, 100).animate({
+                marginLeft: "0px"
+            }, 50);
+
+            function setMaroon() {
+                message.css("color", "maroon");
+                message.css("font-weight", "800");
+                setTimeout(function() {
+                    message.css("color", "");
+                    message.css("font-weight", "");
+                }, 450);
+                
+            }
+
+        }
 
         if (!clicked) {
             //get input from form
@@ -42,16 +78,8 @@ $(document).ready(function() {
             message.fadeIn(500);
 
             clicked = true;
-        } else {
+        } else if (clicked){
             $('.submit-message').html("You can only submit once!");
-        }
-
-        let message = $('.submit-message');
-
-        if (clicked && message.text() === "You can only submit once!") {
-            message.animate({
-                letterSpacing: "20",
-            }, 500);
         }
     });
 });
