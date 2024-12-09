@@ -11,7 +11,7 @@ $(document).ready(function() {
     $("#dev-form-container").submit(function(event) {
         event.preventDefault();
         
-        //conditional to make sure submission can only happen once
+        //conditionals to make sure submission can only happen once
         //per page load
         
         let message = $('.submit-message');
