@@ -65,7 +65,12 @@ textarea {
 }
 
 .home-bio {
-    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-bio div {
+    max-width: 750px;
 }
 
 .background,
