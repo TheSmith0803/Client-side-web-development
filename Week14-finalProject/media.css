@@ -1,1 +1,43 @@
 /*This CSS files is specifically for media queries*/
+
+/*NAV bar*/
+@media only screen and (max-width: 600px) {
+
+}
+
+/*DEV page*/
+
+@media only screen and (max-width: 650px) {
+
+    #dev-header a {
+        display: none;
+    }
+
+    #dev-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .explination1,
+    .explination2,
+    #dev-form-container {
+        position: absolute;
+        align-self: center;
+    }
+
+    .explination1 {
+        transform: translate(0, -250px);
+    }
+
+    .explination2 {
+        transform: translate(0, -105px);
+    }
+
+    #dev-form-container {
+        text-align: center;
+        margin: auto;
+        transform: translate(0, 150px);
+    }
+}
