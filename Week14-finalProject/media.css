@@ -2,42 +2,146 @@
 
 /*NAV bar*/
 @media only screen and (max-width: 600px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    li {
+        padding: 15px
+    }
+
+    li a {
+        padding: 10px;
+        color: black;
+        font-weight: 800;
+        background-image: linear-gradient(to right, #333, #222);
+        border-radius: 20px;
+        text-shadow: 0px 0px 5px #ffffff46;
+        text-wrap: nowrap;
+    }
+}
+
+/*HOME page*/
+
+
+
+@media only screen and (max-width: 600px) {
+    .etcher-name {
+        margin-top: 20px;
+        font-size: 45px;
+    }
+
+    .logo6 {
+        display: none;
+    }
+
+    #home-section {
+        position: absolute;
+        top: 3600px;
+        border: none;
+        box-shadow: none;
+    }
+
+    .home-bio {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #home-section {
+        top: 5000px;
+        z-index: 1;
+    }
+}
+
+/*MUSIC page*/
+
+@media only screen and (max-width: 600px) {
+    .music-nav {
+        box-shadow: 0px 2px 30px 20px #00020f;
+        z-index: 1;
+    } 
+    
+    .music-ul {
+        background-image: linear-gradient(to right, #002035, #000011);
+    }
+
+    .music-text {
+        margin-top: 150px;
+        font-size: 28px;
+        padding: 20px 30px;
+    }
+
+    #music-section {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+    }
+
+    .music-imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 1200px;
+        width: 100%;
+    }
+
+    .quixotic,
+    .brain {
+        transform: none;
+        margin: 50px 0px;
+    }
 
 }
 
 /*DEV page*/
 
-@media only screen and (max-width: 650px) {
-
-    #dev-header a {
-        display: none;
+@media only screen and (max-width: 600px) {
+    .code-wall {
+        width: 350px;
     }
 
     #dev-section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-300px, 0);
+        margin: 20px;
+        margin-top: 150px;
+        margin-bottom: 0;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 0;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+        overflow:visible;
+        min-width: 500px;
     }
 
     .explination1,
-    .explination2,
-    #dev-form-container {
-        position: absolute;
-        align-self: center;
-    }
-
-    .explination1 {
-        transform: translate(0, -250px);
-    }
-
     .explination2 {
-        transform: translate(0, -105px);
+        width: 350px;
     }
 
-    #dev-form-container {
-        text-align: center;
-        margin: auto;
-        transform: translate(0, 150px);
+    .submit-message {
+        position: absolute;
+        transform: translate(0, 700px);
+    }
+
+    #dev-footer {
+        position: absolute;
+        transform: translate(0, 1000px);
     }
 }
