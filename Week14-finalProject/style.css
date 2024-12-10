@@ -296,11 +296,14 @@ p {
 /*DEV PAGE stylings*/
 
 #dev-header {
-    position: relative;
+    position: absolute;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 0;
-    margin-top: 400px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 200px;
 }
 
 #dev-header a {
@@ -309,19 +312,16 @@ p {
 }
 
 #dev-section {
-    position: relative;
-    margin: 20px;
-    margin-top: 250px;
-    margin-bottom: 0;
-    padding-top: 210px;
-    padding-bottom: 150px;
-    height: 300px;
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-content: center;
-    align-items: center; 
-    overflow: hidden;
+    align-items: center;
+    position: absolute;
     min-width: 500px;
+    padding: 0;
+    background: none;
+    transform: translate(0, 600px);
 }
 
 .github-link {
@@ -425,7 +425,7 @@ p {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 50px;
+    transform: translate(0, 1400px);
 }
 
 .dev-img {
