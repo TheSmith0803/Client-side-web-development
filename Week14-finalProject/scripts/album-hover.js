@@ -14,7 +14,7 @@ $(document).ready(function() {
             $('.q-text').stop(true, false).css("color", "").animate({
                 paddingTop: "0px",
                 fontSize: "25px"
-            }, 800);
+            }, 1000);
         }
     );
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
             $('.b-text').stop(true, false).css("color", "").animate({
                 paddingTop: "0px",
                 fontSize: "25px"
-            }, 800);
+            }, 1000);
         }
     );
 });
