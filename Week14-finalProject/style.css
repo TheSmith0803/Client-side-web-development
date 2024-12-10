@@ -205,7 +205,6 @@ p {
     font-size: 50px;
     font-style: italic;
     font-weight: 800;
-    color: black;
     text-shadow: 0px 0px 15px #fff;
     box-shadow: 0px 0px 20px 1px #fff;
     background-color: #000;
@@ -213,7 +212,13 @@ p {
     border-radius: 500px;
 }
 
-.music-text:hover {
+.music-text a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.music-text a:hover {
     color: orange;
 }
 
@@ -234,6 +239,7 @@ p {
 
 .music-imgs {
     display: flex;
+    height: 200px;
 }
 
 .music-imgs img {
@@ -253,7 +259,9 @@ p {
     font-weight: 800;
     transform: translate(-40px, 100px);
     text-shadow: 2px 2px 2px #000000;
+    transition: 1s ease-in-out;
 }
+
 
 .brain {
     text-align: center;
@@ -273,6 +281,12 @@ p {
 .quixotic img,
 .brain img {
     box-shadow: -5px 5px 35px 12px #000;
+    transition: 0.7s ease-in-out;
+}
+
+.quixotic img:hover,
+.brain img:hover {
+    transform: translate(0, -10px);
 }
 
 
