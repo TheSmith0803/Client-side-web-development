@@ -192,6 +192,10 @@ p {
     background-image: linear-gradient(to bottom left, #1e232e, #000031)
 }
 
+.music-header-wrapper:hover {
+    color: orange;
+}
+
 .music-text {
     position: absolute;
     text-align: center;
@@ -209,6 +213,10 @@ p {
     border-radius: 500px;
 }
 
+.music-text:hover {
+    color: orange;
+}
+
 .music-content-wrapper {
     background-color: white;
 }
@@ -219,7 +227,7 @@ p {
     left: 50%;
     top: 60%;
     width: 100%;
-    height: 100%;
+    height: 750px;
     transform: translate(-50%, -50%);
     background-color: #00000000;
 }
@@ -229,7 +237,7 @@ p {
 }
 
 .music-imgs img {
-    transform: translate(0, 300px);
+    transform: translate(0, 0px);
     width: 250px;
     height: 250px;
 }
